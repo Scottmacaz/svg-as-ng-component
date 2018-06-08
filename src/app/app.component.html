@@ -1,1 +1,10 @@
 <app-plate-svg [plateLayout]="plateLayout"></app-plate-svg>
+<p>Click on a position to clear the fill</p>
+<p>Change Color of a position.  Positions are numbered 1-96 and there is no error checking.</p>
+<label >Position (1-96):</label>
+<input type="text" [(ngModel)]="positionToChange">
+<p>
+<label >Color: </label>
+<input type="text" [(ngModel)]="positionToChangeColor">
+</p>
+<button (click)="changeColor()">Change Color</button>

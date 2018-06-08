@@ -13,11 +13,12 @@ export class PlateSvgComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    debugger;
+
   }
 
-  getXCordinate(row: number, column: number) {
-
+  clearFill(position: number) {
+    console.log('Clear Fill on position: ' + position);
+    this.plateLayout.positions[position - 1].className = 'fill-none';
   }
 
 }

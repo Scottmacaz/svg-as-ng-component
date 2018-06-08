@@ -31,7 +31,10 @@
        y="27.125" />
        
        <!-- <ng-container > -->
-        <use *ngFor="let position of plateLayout.positions" xlink:href="#Well" id="0" [attr.x]="position.xCoordinate" [attr.y]="position.yCoordinate" fill="none" stroke="#000000"/>
+        <use *ngFor="let position of plateLayout.positions" xlink:href="#Well" id="0" 
+          [attr.x]="position.xCoordinate" [attr.y]="position.yCoordinate" fill="none" stroke="#000000" 
+          [(attr.class)]="position.className" (click)="clearFill(position.position)" 
+        />
       <!-- </ng-container> -->
 
     <!-- A-row -->

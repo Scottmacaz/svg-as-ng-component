@@ -4,5 +4,6 @@ export class PlatePosition {
     public column: number,
     public xCoordinate: number,
     public yCoordinate: number,
-    public label: string) {}
+    public label: string,
+    public className: string) {}
 }

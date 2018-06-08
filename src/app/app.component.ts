@@ -8,20 +8,28 @@ export class AppComponent implements OnInit {
   plateLayout: PlateLayout;
 
   ngOnInit(): void {
-    const platePositions = this.makePlatePositions();
-    this.plateLayout = new PlateLayout(platePositions);
+    const platePositionMap = this.makePlatePositions();
+    this.plateLayout = new PlateLayout(platePositionMap);
   }
 
   makePlatePositions() {
-    let id = 0;
-    const platePositions: PlatePosition[][] = [];
-    for (let row = 0; row < 8; row++) {
-      platePositions[row] = [];
-      for (let column = 0; column < 12; column++) {
-        platePositions[row][column] = new PlatePosition(id, row + 1, column + 1, `plate-pos-${row + 1}-${column + 1}`);
-        id++;
+    let position = 1;
+    const baseXCoordinate = 62;
+    const baseYCoordinate = 32;
+    const platePositions = new Array<PlatePosition>();
+    let currentXCoordinate = baseXCoordinate;
+    let currentYCoordinate = baseYCoordinate;
+    for (let row = 1; row < 9; row++) {
+      for (let column = 1; column < 13; column++) {
+        platePositions.push(new PlatePosition(position, row, column,
+           currentXCoordinate, currentYCoordinate,  `plate-pos-${row}-${column}`));
+           currentXCoordinate += 9;
+        position++;
       }
+      currentYCoordinate += 10;
+      currentXCoordinate = baseXCoordinate;
     }
+    debugger;
     return platePositions;
   }
 }

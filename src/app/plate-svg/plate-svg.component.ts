@@ -13,6 +13,11 @@ export class PlateSvgComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    debugger;
+  }
+
+  getXCordinate(row: number, column: number) {
+
   }
 
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { PlateLayout } from '../plate-layout';
 
 @Component({
   selector: 'app-plate-svg',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./plate-svg.component.css']
 })
 export class PlateSvgComponent implements OnInit {
+
+  @Input() plateLayout: PlateLayout;
 
   constructor() { }
 

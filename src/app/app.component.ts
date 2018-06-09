@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
 
   changeColor() {
     console.log(`Changing position ${this.positionToChange} to color: ${this.positionToChangeColor}`);
-    // this.plateLayout.positions[this.positionToChange]
+    this.plateLayout.positions[this.positionToChange].fillColor = this.positionToChangeColor;
   }
   makePlatePositions() {
     let position = 1;
@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
     for (let row = 1; row < 9; row++) {
       for (let column = 1; column < 13; column++) {
         platePositions.push(new PlatePosition(position, row, column,
-           currentXCoordinate, currentYCoordinate,  `plate-pos-${row}-${column}`, 'fill-aqua'));
+           currentXCoordinate, currentYCoordinate,  `plate-pos-${row}-${column}`, 'aqua'));
            currentXCoordinate += 9.2;
         position++;
       }

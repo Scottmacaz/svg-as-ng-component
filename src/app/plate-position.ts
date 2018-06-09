@@ -5,5 +5,5 @@ export class PlatePosition {
     public xCoordinate: number,
     public yCoordinate: number,
     public label: string,
-    public className: string) {}
+    public fillColor: string) {}
 }

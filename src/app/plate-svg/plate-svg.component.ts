@@ -16,9 +16,13 @@ export class PlateSvgComponent implements OnInit {
 
   }
 
+  setFill(position: number, color: string) {
+    this.plateLayout.positions[position - 1].fillColor = 'none';
+  }
+
   clearFill(position: number) {
     console.log('Clear Fill on position: ' + position);
-    this.plateLayout.positions[position - 1].className = 'fill-none';
+    this.plateLayout.positions[position - 1].fillColor = 'none';
   }
 
 }

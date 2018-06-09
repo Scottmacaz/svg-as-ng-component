@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+	 Usage- reference as the data field in an object tag with a unique name.  A width="100%" attribute can be added to auto-scale to its parent.
+	 
+	 Example:
+	 <object id="plate1" data="assets/image/lw-96WellPlate.svg" type="image/svg+xml"></object>
+ -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="127.5mm"
+   height="85.5mm"
+   viewBox="0 0 127.5 85.5"
+   version="1.1"
+   preserveAspectRatio="xMinYMin meet"
+   class="labwarewireframe"
+>
+  <defs>
+	<circle id="Well" cx="0" cy="0" r="3.5" stroke-width="0.26458332" stroke-opacity="1" pointer-events="visible" />
+  </defs>
+  <script type="text/javascript">
+	// These are two examples of embedding JS into the SVG itself.  One throws an alert with the well pressed, the other will toggle the fill to red and back.
+	// document.documentElement.addEventListener('click', function(event){alert(event.target.id)})
+	// document.documentElement.addEventListener('click', function(event) { event.target.getAttribute("fill") == "none" ? event.target.setAttribute("fill", "red") : event.target.setAttribute("fill", "none")})
+	
+	// The individual wells can also be addressed using external JS to search for the desired id(s) and changing their fill or stroke attributes. 
+  </script>
+  <g
+     id="96WellPlate"
+     transform="translate(-50.138882,-26.993049)">
+	<rect
+       style="fill:none;stroke:#000000;stroke-width:0.26390111;stroke-opacity:1"
+       id="rect3713"
+       width="127.2361"
+       height="85.236099"
+       x="50.270832"
+       y="27.125" />
+
+    <!-- A-row -->
+    <use xlink:href="#Well" id="0"  x="62.048634" y="32.615082" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="1"  x="71.453011" y="32.615082" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="2"  x="80.857376" y="32.615082" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="3"  x="90.261742" y="32.615082" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="4"  x="99.666107" y="32.615082" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="5"  x="109.07048" y="32.615082" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="6"  x="118.47485" y="32.615082" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="7"  x="127.87922" y="32.615082" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="8"  x="137.28358" y="32.615082" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="9"  x="146.68794" y="32.615082" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="10" x="156.09232" y="32.615082" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="11" x="165.4967"  y="32.615082" fill="none" stroke="#000000"/>
+
+	<!-- B-row -->
+    <use xlink:href="#Well" id="12" x="62.048634" y="43.198414" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="13" x="71.453011" y="43.198414" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="14" x="80.857376" y="43.198414" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="15" x="90.261742" y="43.198414" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="16" x="99.666107" y="43.198414" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="17" x="109.07048" y="43.198414" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="18" x="118.47485" y="43.198414" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="19" x="127.87922" y="43.198414" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="20" x="137.28358" y="43.198414" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="21" x="146.68794" y="43.198414" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="22" x="156.09232" y="43.198414" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="23" x="165.4967"  y="43.198414" fill="none" stroke="#000000"/>
+	
+	<!-- C-row -->
+    <use xlink:href="#Well" id="24" x="62.048634" y="53.592762" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="25" x="71.453011" y="53.592762" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="26" x="80.857376" y="53.592762" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="27" x="90.261742" y="53.592762" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="28" x="99.666107" y="53.592762" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="29" x="109.07048" y="53.592762" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="30" x="118.47485" y="53.592762" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="31" x="127.87922" y="53.592762" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="32" x="137.28358" y="53.592762" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="33" x="146.68794" y="53.592762" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="34" x="156.09232" y="53.592762" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="35" x="165.4967"  y="53.592762" fill="none" stroke="#000000"/>
+
+	<!-- D-row -->
+    <use xlink:href="#Well" id="36" x="62.048634" y="64.176094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="37" x="71.453011" y="64.176094" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="38" x="80.857376" y="64.176094" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="39" x="90.261742" y="64.176094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="40" x="99.666107" y="64.176094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="41" x="109.07048" y="64.176094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="42" x="118.47485" y="64.176094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="43" x="127.87922" y="64.176094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="44" x="137.28358" y="64.176094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="45" x="146.68794" y="64.176094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="46" x="156.09232" y="64.176094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="47" x="165.4967"  y="64.176094" fill="none" stroke="#000000"/>
+
+	<!-- E-row -->
+    <use xlink:href="#Well" id="48" x="62.048634" y="74.75943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="49" x="71.453011" y="74.75943" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="50" x="80.857376" y="74.75943" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="51" x="90.261742" y="74.75943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="52" x="99.666107" y="74.75943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="53" x="109.07048" y="74.75943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="54" x="118.47485" y="74.75943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="55" x="127.87922" y="74.75943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="56" x="137.28358" y="74.75943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="57" x="146.68794" y="74.75943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="58" x="156.09232" y="74.75943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="59" x="165.4967"  y="74.75943" fill="none" stroke="#000000"/>
+
+	<!-- F-row -->
+    <use xlink:href="#Well" id="60" x="62.048634" y="85.342758" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="61" x="71.453011" y="85.342758" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="62" x="80.857376" y="85.342758" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="63" x="90.261742" y="85.342758" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="64" x="99.666107" y="85.342758" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="65" x="109.07048" y="85.342758" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="66" x="118.47485" y="85.342758" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="67" x="127.87922" y="85.342758" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="68" x="137.28358" y="85.342758" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="69" x="146.68794" y="85.342758" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="70" x="156.09232" y="85.342758" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="72" x="165.4967"  y="85.342758" fill="none" stroke="#000000"/>
+
+	<!-- G-row -->
+    <use xlink:href="#Well" id="72" x="62.048634" y="95.926094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="73" x="71.453011" y="95.926094" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="74" x="80.857376" y="95.926094" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="75" x="90.261742" y="95.926094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="76" x="99.666107" y="95.926094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="77" x="109.07048" y="95.926094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="78" x="118.47485" y="95.926094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="79" x="127.87922" y="95.926094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="80" x="137.28358" y="95.926094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="81" x="146.68794" y="95.926094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="82" x="156.09232" y="95.926094" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="83" x="165.4967"  y="95.926094" fill="none" stroke="#000000"/>
+
+	<!-- H-row -->
+    <use xlink:href="#Well" id="84" x="62.048634" y="106.50943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="85" x="71.453011" y="106.50943" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="86" x="80.857376" y="106.50943" fill="none" stroke="#000000"/>
+    <use xlink:href="#Well" id="87" x="90.261742" y="106.50943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="88" x="99.666107" y="106.50943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="89" x="109.07048" y="106.50943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="90" x="118.47485" y="106.50943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="91" x="127.87922" y="106.50943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="92" x="137.28358" y="106.50943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="93" x="146.68794" y="106.50943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="94" x="156.09232" y="106.50943" fill="none" stroke="#000000"/>
+	<use xlink:href="#Well" id="95" x="165.4967"  y="106.50943" fill="none" stroke="#000000"/>
+  </g>
+</svg>

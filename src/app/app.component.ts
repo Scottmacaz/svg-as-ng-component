@@ -6,15 +6,12 @@ import {PlatePosition} from './plate-position';
 export class AppComponent implements OnInit {
 
   plateLayout: PlateLayout;
-  plateLayout2: PlateLayout;
   positionToChange: number;
   positionToChangeColor: string;
 
   ngOnInit(): void {
     const platePositionMap = this.makePlatePositions();
-    const platePositionMap2 = this.makePlatePositions2();
     this.plateLayout = new PlateLayout(platePositionMap);
-    this.plateLayout2 = new PlateLayout(platePositionMap2);
   }
 
   changeColor() {
@@ -40,23 +37,5 @@ export class AppComponent implements OnInit {
     }
     return platePositions;
   }
-  makePlatePositions2() {
-    let position = 1;
-    const baseXCoordinate = 62;
-    const baseYCoordinate = 34;
-    const platePositions = new Array<PlatePosition>();
-    let currentXCoordinate = baseXCoordinate;
-    let currentYCoordinate = baseYCoordinate;
-    for (let row = 1; row < 9; row++) {
-      for (let column = 1; column < 13; column++) {
-        platePositions.push(new PlatePosition(position, row, column,
-           currentXCoordinate, currentYCoordinate,  `plate-pos-${row}-${column}`, 'fill-aqua'));
-           currentXCoordinate += 9.2;
-        position++;
-      }
-      currentYCoordinate += 10;
-      currentXCoordinate = baseXCoordinate;
-    }
-    return platePositions;
-  }
+
 }

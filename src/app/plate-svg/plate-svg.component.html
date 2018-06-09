@@ -16,8 +16,8 @@
 	// These are two examples of embedding JS into the SVG itself.  One throws an alert with the well pressed, the other will toggle the fill to red and back.
 	// document.documentElement.addEventListener('click', function(event){alert(event.target.id)})
 	// document.documentElement.addEventListener('click', function(event) { event.target.getAttribute("fill") == "none" ? event.target.setAttribute("fill", "red") : event.target.setAttribute("fill", "none")})
-	
-	// The individual wells can also be addressed using external JS to search for the desired id(s) and changing their fill or stroke attributes. 
+
+	// The individual wells can also be addressed using external JS to search for the desired id(s) and changing their fill or stroke attributes.
   </script>
   <g
      id="96WellPlate"
@@ -29,13 +29,14 @@
        height="85.236099"
        x="50.270832"
        y="27.125" />
-       
-       <!-- <ng-container > -->
-        <use *ngFor="let position of plateLayout.positions" xlink:href="#Well" id="0" 
-          [attr.x]="position.xCoordinate" [attr.y]="position.yCoordinate" fill="none" stroke="#000000" 
-          [(attr.class)]="position.className" (click)="clearFill(position.position)" 
-        ></use>
-      <!-- </ng-container> -->
+
+       <ng-container *ngFor="let position of plateLayout.positions" >
+        <use  xlink:href="#Well" id="0"
+          [attr.x]="position.xCoordinate" [attr.y]="position.yCoordinate" fill="none" stroke="#000000"
+          [(attr.class)]="position.className" (click)="clearFill(position.position)"
+        />
+        <text [attr.x]="position.xCoordinate -1" [attr.y]="position.yCoordinate + 1" style="font-size: 3px;">{{position.position}}</text>
+      </ng-container>
 
     <!-- A-row -->
     <!-- <use xlink:href="#Well" id="0"  x="62.048634" y="32.615082" fill="none" stroke="#000000"/>
@@ -64,7 +65,7 @@
 	<use xlink:href="#Well" id="21" x="146.68794" y="43.198414" fill="none" stroke="#000000"/>
 	<use xlink:href="#Well" id="22" x="156.09232" y="43.198414" fill="none" stroke="#000000"/>
 	<use xlink:href="#Well" id="23" x="165.4967"  y="43.198414" fill="none" stroke="#000000"/> -->
-	
+
 	<!-- C-row -->
     <!-- <use xlink:href="#Well" id="24" x="62.048634" y="53.592762" fill="none" stroke="#000000"/>
 	<use xlink:href="#Well" id="25" x="71.453011" y="53.592762" fill="none" stroke="#000000"/>

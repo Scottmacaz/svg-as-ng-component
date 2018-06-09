@@ -1,6 +1,6 @@
 
 <H1>96 Well Plate</H1>
-<app-plate-svg [plateLayout]="plateLayout96"></app-plate-svg>
+<app-labware [labwareLayout]="plateLayout96"></app-labware>
 <p>Click on a 96 well plate position to clear the fill</p>
 <p>Change Color of a plate 96 position.  There is no error checking so make sure to enter
   a valid position and a valid color name
@@ -12,8 +12,13 @@
 <input type="text" [(ngModel)]="positionToChangeColor">
 </p>
 <button (click)="changeColor()">Change Color</button>
+
+<hr>
+<H1>96 Tip Rack</H1>
+<app-labware [labwareLayout]="tipLayout96"></app-labware>
+
 <hr>
 <H1>384 Well Plate</H1>
-<app-plate-svg [plateLayout]="plateLayout384"></app-plate-svg>
+<app-labware [labwareLayout]="plateLayout384"></app-labware>
 
 <hr>

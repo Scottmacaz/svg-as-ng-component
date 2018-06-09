@@ -1,4 +1,4 @@
-export class PlatePosition {
+export class LabwarePosition {
   constructor(public position: number,
     public row: number,
     public column: number,

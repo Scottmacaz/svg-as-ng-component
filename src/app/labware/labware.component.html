@@ -13,7 +13,10 @@
     <!-- The Id's in the definitions below are tied to the toLower of the PlateType enum -->
     <circle id="plate96" cx="0" cy="0" r="3.5" stroke-width="0.26458332" stroke-opacity="1" pointer-events="visible" />
     <rect id="plate384" x="0" y="0" height="2.97" width="2.97" stroke-width="0.26458332" stroke-opacity="1" pointer-events="visible" />
-
+    <g id="tip96">
+        <circle id="donut" cx="0" cy="0" r="3.5" stroke-width="0.26458332" stroke-opacity="1" pointer-events="visible" />
+        <circle id="hole" cx="0" cy="0" r="1.35" stroke-width="0.26458332" stroke-opacity="1" pointer-events="visible" />
+      </g>
   </defs>
   <script type="text/javascript">
 	// These are two examples of embedding JS into the SVG itself.  One throws an alert with the well pressed, the other will toggle the fill to red and back.
@@ -32,7 +35,7 @@
        x="50.270832"
        y="27.125" />
 
-       <ng-container *ngFor="let position of plateLayout.positions" >
+       <ng-container *ngFor="let position of labwareLayout.positions" >
         <text [attr.x]="position.xCoordinate -1" [attr.y]="position.yCoordinate + 1" style="font-size: 3px;">{{position.position}}</text>
         <use  style="opacity: .5;" [attr.xlink:href]="getPlateType()"
           [attr.x]="position.xCoordinate" [attr.y]="position.yCoordinate" [attr.fill]="position.fillColor" stroke="#000000"

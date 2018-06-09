@@ -10,7 +10,10 @@
    class="labwarewireframe"
 >
   <defs>
-	<circle id="Well" cx="0" cy="0" r="3.5" stroke-width="0.26458332" stroke-opacity="1" pointer-events="visible" />
+    <!-- The Id's in the definitions below are tied to the toLower of the PlateType enum -->
+    <circle id="plate96" cx="0" cy="0" r="3.5" stroke-width="0.26458332" stroke-opacity="1" pointer-events="visible" />
+    <rect id="plate384" x="0" y="0" height="2.97" width="2.97" stroke-width="0.26458332" stroke-opacity="1" pointer-events="visible" />
+
   </defs>
   <script type="text/javascript">
 	// These are two examples of embedding JS into the SVG itself.  One throws an alert with the well pressed, the other will toggle the fill to red and back.
@@ -20,7 +23,6 @@
 	// The individual wells can also be addressed using external JS to search for the desired id(s) and changing their fill or stroke attributes.
   </script>
   <g
-     id="96WellPlate"
      transform="translate(-50.138882,-26.993049)">
 	<rect
        style="fill:none;stroke:#000000;stroke-width:0.26390111;stroke-opacity:1"
@@ -32,7 +34,7 @@
 
        <ng-container *ngFor="let position of plateLayout.positions" >
         <text [attr.x]="position.xCoordinate -1" [attr.y]="position.yCoordinate + 1" style="font-size: 3px;">{{position.position}}</text>
-        <use  style="opacity: .5;" xlink:href="#Well" id="0"
+        <use  style="opacity: .5;" [attr.xlink:href]="getPlateType()"
           [attr.x]="position.xCoordinate" [attr.y]="position.yCoordinate" [attr.fill]="position.fillColor" stroke="#000000"
            (click)="clearFill(position.position)"
         />
